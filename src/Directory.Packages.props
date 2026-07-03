@@ -3,6 +3,10 @@
     <!-- Enable central package management, https://learn.microsoft.com/en-us/nuget/consume-packages/Central-Package-Management -->
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
+  <!-- Aspire AppHost package versions. -->
+  <ItemGroup>
+    <PackageVersion Include="Aspire.Hosting.JavaScript" Version="13.4.6" />
+  </ItemGroup>
   <!-- Test package versions (referenced from test projects under tests/). -->
   <ItemGroup>
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.7.0" />

@@ -1,0 +1,5 @@
+{
+  "appHost": {
+    "path": "src/Tradecraft.AppHost/Tradecraft.AppHost.csproj"
+  }
+}

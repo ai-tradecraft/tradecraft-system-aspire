@@ -1,0 +1,40 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Tradecraft.AppHost/Tradecraft.AppHost.csproj" />
+  </Folder>
+  <Folder Name="/submodules/" />
+  <Folder Name="/submodules/asset-storage/" />
+  <Folder Name="/submodules/asset-storage/src/" />
+  <Folder Name="/submodules/asset-storage/src/hosts/" />
+  <Folder Name="/submodules/asset-storage/src/hosts/aspire/">
+    <Project Path="submodules/asset-storage/src/hosts/aspire/AssetStorage.ServiceDefaults/AssetStorage.ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/submodules/asset-storage/src/hosts/webapi/">
+    <Project Path="submodules/asset-storage/src/hosts/webapi/AssetStorage.WebControllers/AssetStorage.WebControllers.csproj" />
+    <Project Path="submodules/asset-storage/src/hosts/webapi/AssetStorage.WebHost/AssetStorage.WebHost.csproj" />
+  </Folder>
+  <Folder Name="/submodules/asset-storage/src/infrastructure/">
+    <Project Path="submodules/asset-storage/src/infrastructure/AssetStorage.Sqlite/AssetStorage.Sqlite.csproj" />
+  </Folder>
+  <Folder Name="/submodules/asset-storage/src/services/">
+    <Project Path="submodules/asset-storage/src/services/AssetStorage.Abstractions/AssetStorage.Abstractions.csproj" />
+    <Project Path="submodules/asset-storage/src/services/AssetStorage.Domain/AssetStorage.Domain.csproj" />
+  </Folder>
+  <Folder Name="/submodules/lamplighter-opencode/" />
+  <Folder Name="/submodules/lamplighter-opencode/poc/" />
+  <Folder Name="/submodules/lamplighter-opencode/poc/chat-through-harness/" />
+  <Folder Name="/submodules/lamplighter-opencode/poc/chat-through-harness/src/">
+    <Project Path="submodules/lamplighter-opencode/poc/chat-through-harness/src/ChatThroughHarness.Api/ChatThroughHarness.Api.csproj" />
+  </Folder>
+  <Folder Name="/submodules/lamplighter-opencode/poc/chat-through-harness/tests/">
+    <Project Path="submodules/lamplighter-opencode/poc/chat-through-harness/tests/ChatThroughHarness.Api.Tests/ChatThroughHarness.Api.Tests.csproj" />
+  </Folder>
+  <Folder Name="/submodules/lamplighter-controller/">
+    <Project Path="submodules/lamplighter-controller/src/Lamplighter.Controller/Lamplighter.Controller.csproj" />
+    <Project Path="submodules/lamplighter-controller/tests/Lamplighter.Controller.Tests/Lamplighter.Controller.Tests.csproj" />
+  </Folder>
+  <Folder Name="/submodules/tradecraft-contracts/">
+    <Project Path="submodules/tradecraft-contracts/src/Tradecraft.Contracts/Tradecraft.Contracts.csproj" />
+    <Project Path="submodules/tradecraft-contracts/tests/Tradecraft.Contracts.Tests/Tradecraft.Contracts.Tests.csproj" />
+  </Folder>
+</Solution>

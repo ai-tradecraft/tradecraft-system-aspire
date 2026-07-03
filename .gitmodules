@@ -1,0 +1,15 @@
+[submodule "submodules/lamplighter-opencode"]
+	path = submodules/lamplighter-opencode
+	url = https://github.com/ai-tradecraft/lamplighter-opencode
+[submodule "submodules/asset-storage"]
+	path = submodules/asset-storage
+	url = https://github.com/ai-tradecraft/asset-storage
+[submodule "submodules/asset-storage-client-py"]
+	path = submodules/asset-storage-client-py
+	url = https://github.com/ai-tradecraft/asset-storage-client-py.git
+[submodule "submodules/lamplighter-controller"]
+	path = submodules/lamplighter-controller
+	url = https://github.com/ai-tradecraft/lamplighter-controller.git
+[submodule "submodules/tradecraft-contracts"]
+	path = submodules/tradecraft-contracts
+	url = https://github.com/ai-tradecraft/tradecraft-contracts.git
