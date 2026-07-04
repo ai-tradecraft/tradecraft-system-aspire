@@ -30,6 +30,17 @@ when they are present:
 
 - `LAMPLIGHTER_OPENCODE_USE_REAL_BACKEND`
 - `OPENCODE_DISABLE_AUTOUPDATE`
+- `TRADECRAFT_RUNTIME_ADAPTER_DEPLOYMENT_MODE`
+- `LAMPLIGHTER_OPENCODE_CONTAINER_IMAGE`
+- `CONTAINER_RUNTIME`
 
 Set `LAMPLIGHTER_OPENCODE_USE_REAL_BACKEND=1` when the local OpenCode
 configuration should be used as the live model backend.
+
+Set `TRADECRAFT_RUNTIME_ADAPTER_DEPLOYMENT_MODE=local_container` to have the
+controller invoke the OpenCode adapter through Docker/Podman while preserving
+the same `adapter.operation` contract. Build and verify the adapter image first:
+
+```sh
+make -C submodules/lamplighter-opencode test-container-adapter-operation
+```

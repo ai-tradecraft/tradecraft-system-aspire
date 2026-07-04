@@ -42,6 +42,41 @@ The AppHost injects allocated endpoint references rather than fixed URLs:
 Provider credentials and other secrets are inherited from the controller
 process environment for this POC. They are not embedded in the AppHost source.
 
+## Adapter Deployment Modes
+
+The default AppHost path uses the local-process OpenCode adapter:
+
+```sh
+uv run lamplighter-opencode adapter-operation --operation operation.json --json
+```
+
+To prove the same controller protocol against the local-container deployment
+mode, first build/verify the adapter image:
+
+```sh
+make -C submodules/lamplighter-opencode test-container-adapter-operation
+```
+
+Then start the AppHost with:
+
+```sh
+export TRADECRAFT_RUNTIME_ADAPTER_DEPLOYMENT_MODE=local_container
+export LAMPLIGHTER_OPENCODE_CONTAINER_IMAGE=lamplighter-opencode:local
+aspire run --isolated --apphost src/Tradecraft.AppHost
+```
+
+This switches only `Runner__Adapter__Executable` and
+`Runner__Adapter__ArgumentPrefix__*` so the Lamplighter controller invokes:
+
+```sh
+docker run --rm ... lamplighter-opencode:local adapter-operation --operation operation.json --json
+```
+
+The controller-to-adapter contract remains the same `adapter.operation` /
+`adapter.operation_result` envelope. The AppHost mounts the controller
+workspace and `tradecraft-contracts` checkout so result refs and schema
+ownership stay outside the image. Set `CONTAINER_RUNTIME=podman` to use Podman.
+
 ## Inspect
 
 ```sh
